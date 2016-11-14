@@ -1,0 +1,55 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    Fill in your answer here
+	在兩個版本中使用 git diff, git diff 會很明確地指出兩個版本的差異, 大大的減
+    少了人工比對兩版本差異的時間, 而且差異處往往就是產生 bug 的所在, 如此功能
+    可以有效的減少尋找 bug 所耗費的時間, 尤其是 typo 類的 bug.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Fill in your answer here
+	可以檢視完整的歷史紀錄, 代表了可以檢視一個檔案的建構過程, 某方面來說也可以
+    看成是自己的學習歷程, 所以我認為可以輕易地存取檔案的歷史, 事非常有幫助的.
+    另一方面已開發的角度來看, 可以存取所以版本,讓工程師可以較為容易的追蹤系統
+    的 bug 是在何時產生的, 對於工程師來說會有很大的幫助
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Fill in your answer here
+	我覺得自動儲存的唯一好處會在系統意外當機時產生, 這個時候由於系統自動儲存新
+    的版本, 所以可能可以搶救回比較多的資訊.
+    但是自動儲存版本可能會產生太多沒有明確變更的版本, 使版本庫混亂, 增加查詢版
+    本庫的困難 
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Fill in your answer here
+	我認為可以在一個 commit 中儲存多個檔案的變更是非常方便的事情, 尤其是在程式
+    編程中常常一個邏輯的變更會跨越多個檔案, 所以我認為這樣的設計是很棒的.
+    Google Docs 在這方面就顯得不方便, 尤其是在返回先前版本的時候,需要分檔案尋
+    找同一個的邏輯變更, 這實在很惱人.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    Fill in your answer here
+	在 Repository 資料夾中使用 Git log, 會顯示出這個儲存庫的所有 Commit History
+    使用 git diff + Commit_id1 + Commit_id2 會以 Commit_id1 為基礎比較 
+    Commit_id2 檔案的差異, 增加或是刪減
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    Fill in your answer here
+	我認為有版本控管讓我對程式碼大幅度更改有了十足的信心, 了不起就回復到前一個
+    Commit, 在這樣的基礎之下, 我更能勇敢地進行大規模的改動.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Fill in your answer here
+	用網路上找到的 github repository 去練習, 去測試修改 Objective-C 6th 的範例
+    程式
