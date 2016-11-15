@@ -6,7 +6,8 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    手動的 pull change 讓自己更能控管程式當下的狀態, 總是和遠端保持相同狀態
+    會使在本地端開發中的檔案後到更動, 甚至產生衝突。
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
