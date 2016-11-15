@@ -9,14 +9,35 @@ What value do you think it offers?
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+    利用暫存區先將屬於同一個邏輯變更的檔案放入暫存區, 然後提交。再將下一個邏輯
+    變更的相關檔案放入暫存區，再提交，如此便可利用暫存區確保 One Commit per 
+    logical change.
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+    利用分支和合併的功能可以使不同的功能在不同的分支開發, 最後再合併入 master 
+    分支, 如此可使得開發歷程清楚, 不能功能的 commit 依序排好, 對開發紀錄的整
+    齊有很大幫助
 
 How do the diagrams help you visualize the branch structure?
+    我覺得 branch 的概念最特別的是 branch 並不完全是我們一般理解的分支 (也就是
+    一連串 commit 的集合), branch 在 git 中有點像標籤, 在擬新增新 Commit 之後,
+    branch (label) 就會自動的移動到新的 Commit 上
+    
+    然後 Detached HEAD 的警告主要是要避免在不知道 Commit ID 的情況下, 新增 
+    Commit 之後又切換到其他分支, 造成沒辦法切換回去這個新增 Commit 的狀況
+
+    圖形化對於了解分支的 Reachability 很有幫助
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+    合併兩個分支之後產生一個包含兩個分支不同處的新的 Commit, 並使當前 Checked 
+    out 的分支更新他的 branch (label), 然後這個新的 Coimmit 有兩個 Parent 
+    Commit, 所以在圖中會指向兩個 Commit
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+    我覺得在沒有衝突的時候 Git 的策略可以讓我們專注在程式設計師要專注在地方上
+    , 程式設計師只要專注在Git 沒辦法自動合成的部分, 這會讓我們省了很多時間
+    倘若總是手動合併就太耗時了, 總是自動合併感覺也會產出一堆 bug, 所以如此的
+    折衷策略我覺得非常好
